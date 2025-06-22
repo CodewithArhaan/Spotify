@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" type="image/png">
+
+</head>
+
+<body>
+    <nav class="flex">
+        <div class="Homesearch">
+
+            <img src="svg/spotify_logo.svg" alt="Spotify Logo" class="spotify-logo">
+            <img src="svg/Home.svg" alt="Home" id="home-icon">
+        </div>
+        <div class="searchbox flex">
+            <img src="svg/search.svg" alt="Search" id="search-icon" class="svg">
+            <input type="search" placeholder="What do you want to...">
+        </div>
+
+        <div class="list">
+            <ul>
+                <li class="hover"><a href="" class="hover">Premium</a></li>
+                <li class="hover"><a href="" class="hover">Support</a></li>
+                <li class="hover"><a href="" class="hover">Download</a></li>
+            </ul>
+        </div>
+        <div class="rightsideofnav flex  itemscenter">
+            <div class="seprationline"></div>
+            <div class="flex center itemscenter downloadcapsule hover">
+                <a class="font1 Install hover" href=""> <img src="svg/download.svg" alt="Download"
+                        id="download-icon">Install App</a>
+            </div>
+        </div>
+        <div class="authentication">
+            <button class="btn1 font1 hover">Sign up</button>
+            <button class="btn1 btn2 btn-p1 font1" id="login">Log in</button>
+        </div>
+    </nav>
+    <div class="container flex">
+        <div class="left m1 rounded">
+            <button class="btn1" id="cross">
+                <img class="svg" src="svg/cross.svg" alt="Close menu">
+            </button>
+
+            <!-- Add mobile navigation menu -->
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="" class="hover">Premium</a></li>
+                    <li><a href="" class="hover">Support</a></li>
+                    <li><a href="" class="hover">Download</a></li>
+                </ul>
+            </div>
+
+            <div class="library flex">Your library
+                <!-- <span>
+                    <button class="btn1">
+                        <img class="svg" id="plus" src="svg/cross.svg" alt="Add to library">
+                    </button>
+                </span> -->
+            </div>
+
+            <div class="songslist">
+                <ul>
+
+
+                </ul>
+            </div>
+
+
+
+            <footer class="footer1 flex">
+                <div>
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a>
+                </div>
+            </footer>
+
+        </div>
+        <div class="right m1 rounded">
+            <div class="trendingsongpart">
+
+
+                <div class="trendingsong">
+                    <div class="hamburger">
+                        <img src="svg/hamburger.svg" alt="hamburger">
+                    </div>
+                    <h2>Spotify Playlist</h2>
+                    <a href="">Show all</a>
+                </div>
+                <div class="cardslist">
+
+                    <!-- <div class="cardcontainer" data-folder="gym">
+                        <div class="card">
+                            <div class="play">
+
+                                <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="48" fill="green" />
+                                    <polygon points="40,30 70,50 40,70" fill="black" />
+                                </svg>
+                            </div>
+
+                            <img src="https://i.scdn.co/image/ab67616d00001e026d73f67ed72ae8eeb251040f" alt="card">
+
+                        </div>
+                        <div class="cardtext">
+
+                            <h2>Besos</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur </p>
+                        </div>
+                    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+
+
+                </div>
+
+            </div>
+            <div class="playbar">
+                <div class="abovebar">
+
+                    <div class="musicinfo"></div>
+                    <div class="songbuttons">
+                        <img id="previous" src="svg/previoussong.svg" alt="previoussong">
+                        <img id="play" src="svg/play.svg" alt="play">
+                        <img id="next" src="svg/nextsong.svg" alt="nextsong">
+                    </div>
+
+
+                    <div class="timeandvol">
+
+
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img id="Volume" src="svg/volume.svg" alt="Volume">
+                            <input type="range" name="range" id="volcontrol">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
