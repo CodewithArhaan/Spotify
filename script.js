@@ -2,7 +2,7 @@ let Folder;
 async function getsongs(folder) {
     // fetching the songs
     Folder = folder
-    let a = await fetch(`http://192.168.2.9:3000/songs/${folder}`)
+    let a = await fetch(`http://127.0.0.1:3000/songs/${folder}`)
     let response = await a.text()
 
 
@@ -86,7 +86,7 @@ async function getsongs(folder) {
 // displaying the playlist from the folders
 
 async function showplaylist() {
-    let a = await fetch("http://192.168.2.9:3000/songs/")
+    let a = await fetch("http://127.0.0.1:3000/songs/")
     let response = await a.text()
 
     let div = document.createElement("div")
@@ -98,7 +98,7 @@ async function showplaylist() {
             let folders = e.href.split("/").slice(-2)[0]
 
             // displaying the meta deta of the folders
-            let a = await fetch(`http://192.168.2.9:3000/songs/${folders}/info.json`)
+            let a = await fetch(`http://127.0.0.1:3000/songs/${folders}/info.json`)
             let response = await a.json()
             document.querySelector(".cardslist").innerHTML += `<div class="cardcontainer" data-folder="${folders}">
                         <div class="card">
